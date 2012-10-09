@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74254F8115D7257700FDE75B /* client-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74254F7F15D7257700FDE75B /* client-Info.plist */; };
 		74254F8215D7257700FDE75B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 74254F8015D7257700FDE75B /* Credits.rtf */; };
 		743612DD15BFA75800CC2BCA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743612AC15BFA55A00CC2BCA /* Cocoa.framework */; };
 		743612F315BFA7DC00CC2BCA /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744488CB15BF0B84006595CE /* SDL.framework */; };
@@ -730,6 +729,11 @@
 			path = cfg;
 			sourceTree = "<group>";
 		};
+		74F3EAF6162315DD00EF448B /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -777,7 +781,7 @@
 		744487C815BF0464006595CE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "The ASCII Project";
 			};
 			buildConfigurationList = 744487CB15BF0464006595CE /* Build configuration list for PBXProject "The ASCII Project" */;
@@ -790,6 +794,12 @@
 			mainGroup = 744487C615BF0464006595CE;
 			productRefGroup = 744487D415BF047E006595CE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 74F3EAF6162315DD00EF448B /* Products */;
+					ProjectRef = 7444889915BF04EF006595CE /* The ASCII Project.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				744487D215BF047E006595CE /* server */,
@@ -803,7 +813,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74254F8115D7257700FDE75B /* client-Info.plist in Resources */,
 				74254F8215D7257700FDE75B /* Credits.rtf in Resources */,
 				749EC50315DA291C0012A646 /* MenuBackground.png in Resources */,
 				74B3E80E1623046700E1A2C1 /* README in Resources */,

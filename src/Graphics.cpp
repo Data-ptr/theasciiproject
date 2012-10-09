@@ -718,10 +718,6 @@ void GraphicsTCOD::drawMainInterface()
             mapOutput->printEx(mapOutput->getWidth()/2, mapOutput->getHeight()-1, TCOD_BKGND_NONE, TCOD_CENTER, "Select Mode", TCODColor(255,255,255));
         }
         
-        //requestMap();
-        
-       // if(!unpacking)
-       //     drawAll();
         
         drawAll();
         
@@ -738,15 +734,6 @@ void GraphicsTCOD::drawMainInterface()
         TCODConsole::blit(textOutputConsole,0,0,0,0,output,0,32, 1.0f, 1.0f);
         render();
         //mapOutput->clear();
-        
-        
-        /* if((key.c == 'a' || key.c == 's' || key.c == 'w' || key.c == 'd') && connected && loggedIn && !textInput)
-         {
-         while(key.vk != TCODK_NONE)
-         {
-         TCODSystem::checkForEvent(TCOD_EVENT_KEY_PRESS|TCOD_EVENT_MOUSE,&key,&mouse);
-         }
-         } */
         
         
     }
